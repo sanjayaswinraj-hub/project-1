@@ -1,0 +1,136 @@
+/* Custom Select Container */
+.custom-select-container {
+    position: relative;
+    width: 100%;
+    height: 60px; /* Match input height */
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.custom-select-container.focused {
+    background: white;
+    border-color: #0a192f;
+}
+
+.custom-select-container.error {
+    border-color: #0a192f;
+}
+
+/* Selected Value Display */
+.custom-select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px 15px 5px; /* Space for label */
+    width: 100%;
+}
+
+.custom-select-value {
+    color: #0a192f;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.custom-select-arrow {
+    width: 12px;
+    height: 12px;
+    transition: transform 0.3s ease;
+    opacity: 0.7;
+}
+
+.custom-select-container.open .custom-select-arrow {
+    transform: rotate(180deg);
+}
+
+/* Floating Label */
+.custom-select-label {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    color: #888;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.custom-select-container.has-value .custom-select-label,
+.custom-select-container.focused .custom-select-label,
+.custom-select-container.open .custom-select-label {
+    top: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #0a192f;
+}
+
+/* Dropdown Options */
+.custom-select-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    z-index: 1000;
+    max-height: 250px;
+    overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+.custom-select-container.open .custom-select-options {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.custom-option {
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 0.95rem;
+    color: #0a192f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-option:hover {
+    background-color: #f0f4f8;
+    color: #0a192f;
+}
+
+.custom-option.selected {
+    background-color: #eef2f6;
+    font-weight: 600;
+    color: #0a192f;
+}
+
+/* Scrollbar styling */
+.custom-select-options::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-select-options::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.custom-select-options::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.custom-select-options::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}

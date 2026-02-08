@@ -1,0 +1,503 @@
+/* Critical Responsive Fixes for FR EXIMS Website */
+
+/* Fix mobile menu functionality – Full width overlay on mobile */
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(30,58,95,0.98);
+        flex-direction: column;
+        align-items: center;
+        padding: 6rem 0 2rem;
+        border-radius: 0;
+        box-shadow: none;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        z-index: 1002;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .nav-menu li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1.25rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    
+    .mobile-toggle {
+        z-index: 1003;
+        position: relative;
+    }
+    
+    .mobile-toggle.active span {
+        background-color: #ffffff;
+    }
+    
+    .mobile-toggle.active span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .mobile-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-toggle.active span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .nav-menu li:last-child a {
+        border-bottom: none;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        box-shadow: none;
+        background: rgba(17,24,39,0.95);
+        margin-top: 0;
+        max-height: 40vh;
+        overflow-y: auto;
+    }
+    
+    .dropdown-menu a {
+        padding: 0.55rem 2rem;
+        color: rgba(255,255,255,0.9);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        font-size: 0.95rem;
+    }
+}
+
+/* Fix container width issues */
+.container {
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Override inline container styles from index.html */
+body .container {
+    max-width: 1200px !important;
+}
+
+/* Fix products grid responsiveness */
+@media (max-width: 768px) {
+    :root {
+        --product-image-height: 230px;
+    }
+    
+    .products-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    
+    .products-grid .product-card {
+        width: 100% !important;
+        max-width: 420px !important;
+        margin: 0 auto;
+    }
+    
+    .products-grid .product-card img {
+        width: 100% !important;
+        height: var(--product-image-height) !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+    
+    .products-grid .product-card > div {
+        padding: 1.25rem !important;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .product-card--image-overlay {
+        margin-bottom: 1rem;
+    }
+    
+    .subcategory-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+        justify-items: center;
+    }
+    
+    .subcategory-grid .product-item-card {
+        width: 100% !important;
+        max-width: 420px !important;
+        margin: 0 auto;
+    }
+    
+    .subcategory-grid .product-item-card .card-body {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .subcategory-grid .card-title,
+    .products-grid .product-card h4 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.3;
+    }
+    
+    .subcategory-section {
+        margin-bottom: 3rem !important;
+    }
+    
+    .subcategory-section h2 {
+        font-size: 1.7rem !important;
+        text-align: center;
+    }
+    
+    /* Fix subcategory pages with 70% width */
+    div[style*="max-width: 70%"] {
+        max-width: 95% !important;
+        padding: 0 10px;
+    }
+    
+    /* Fix 4-column grids on mobile */
+    div[style*="grid-template-columns: repeat(4, 1fr)"] {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+    }
+}
+
+/* Fix contact page layout issues */
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    
+    .contact-divider {
+        display: none !important;
+    }
+    
+    /* Fix contact form grid layouts */
+    div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 0 !important;
+    }
+    
+    /* Fix contact page width */
+    div[style*="max-width: 80%"] {
+        max-width: 95% !important;
+    }
+    
+    div[style*="grid-template-columns: 33% 2% 45%"] {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+}
+
+/* Fix hero section responsiveness */
+@media (max-width: 768px) {
+    .hero-slider h1 {
+        font-size: 2.2rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero-slider p {
+        font-size: 1rem !important;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+}
+
+/* Fix about section responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+    }
+    
+    .vision-mission-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .about-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .btn-large {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Fix showcase section responsiveness */
+@media (max-width: 768px) {
+    .showcase-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .showcase-row {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .showcase-card {
+        height: 200px;
+    }
+}
+
+/* Fix why choose section */
+@media (max-width: 768px) {
+    .why-choose-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+}
+
+/* Fix testimonials section */
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+}
+
+/* Fix footer responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        text-align: center;
+    }
+}
+
+/* Fix products page hero */
+@media (max-width: 768px) {
+    .products-page-hero .hero-title {
+        font-size: 2rem !important;
+    }
+    
+    .products-page-hero {
+        min-height: 40vh;
+        padding: 4rem 0;
+    }
+}
+
+/* Fix button responsiveness */
+@media (max-width: 768px) {
+    .btn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+    
+    .btn-large {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+    
+    /* Fix inline button styles */
+    a[style*="padding: 15px 35px"] {
+        padding: 12px 20px !important;
+        font-size: 0.95rem !important;
+    }
+    
+    a[style*="padding: 18px 35px"] {
+        padding: 15px 25px !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* Fix form responsiveness */
+@media (max-width: 768px) {
+    .form-floating input,
+    .form-floating select,
+    .form-floating textarea {
+        padding: 20px 15px 15px !important;
+        font-size: 1rem !important;
+    }
+    
+    .form-floating label {
+        top: 20px !important;
+        left: 15px !important;
+        font-size: 1rem !important;
+    }
+    
+    .form-floating input:focus + label,
+    .form-floating input:not(:placeholder-shown) + label,
+    .form-floating select:focus + label,
+    .form-floating textarea:focus + label,
+    .form-floating textarea:not(:placeholder-shown) + label {
+        top: 8px !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* Fix image responsiveness */
+@media (max-width: 768px) {
+    .about-image {
+        height: 250px !important;
+        transform: none !important;
+    }
+    
+    .image-container {
+        border-radius: 15px;
+    }
+    
+    .overlay-content {
+        flex-direction: column !important;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+/* Fix section padding on mobile */
+@media (max-width: 768px) {
+    .section {
+        padding: 3rem 0 !important;
+    }
+    
+    .modern-about {
+        padding: 3rem 0 !important;
+    }
+    
+    .why-choose-section {
+        padding: 3rem 0 !important;
+    }
+    
+    .showcase-section {
+        padding: 3rem 0 !important;
+    }
+}
+
+/* Fix text sizes on mobile */
+@media (max-width: 768px) {
+    .section-title-modern {
+        font-size: 2rem !important;
+    }
+    
+    .section-title h2 {
+        font-size: 2rem !important;
+    }
+    
+    .lead-text {
+        font-size: 1.1rem !important;
+    }
+    
+    .secondary-text {
+        font-size: 1rem !important;
+    }
+}
+
+/* Fix mobile menu toggle */
+.mobile-menu.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.mobile-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Ensure proper z-index for mobile menu */
+.header {
+    z-index: 1001;
+}
+
+.nav-menu {
+    z-index: 1000;
+}
+
+/* Fix overflow issues */
+body {
+    overflow-x: hidden;
+}
+
+/* Fix small screen issues */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-slider h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .section-title-modern {
+        font-size: 1.8rem !important;
+    }
+    
+    .btn {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Fix tablet view issues */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .showcase-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .why-choose-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Fix 70% width pages on tablet */
+    div[style*="max-width: 70%"] {
+        max-width: 85% !important;
+    }
+    
+    /* Fix 4-column grids on tablet */
+    div[style*="grid-template-columns: repeat(4, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
