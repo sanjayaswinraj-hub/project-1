@@ -490,7 +490,7 @@ img {
     border-bottom: none;
     width: auto;
     font-size: 1.5rem;
-    color: var(--text-dark) !important; /* Force dark text in mobile menu */
+    color: white !important; /* Force dark text in mobile menu */
   }
 
   .top-bar {
