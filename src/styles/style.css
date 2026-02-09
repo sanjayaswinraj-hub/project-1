@@ -259,10 +259,12 @@ img {
 
 .brand-name {
   font-size: 1.8rem;
-  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   transition: color 0.3s ease;
+  font-family: Baskerville VT, serif;
+  letter-spacing: 0.08em;
+  font-weight: 600;
 }
 
 .nav-menu {
