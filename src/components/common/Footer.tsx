@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} FR EXIMS. All Rights Reserved Design & Developed with ❤️ by Rookiezz Solutions. | <Link to="/privacy" style={{color: '#999'}}>Privacy Policy</Link></p>
+          <p>&copy; {new Date().getFullYear()} FR EXIMS. All Rights Reserved Design & Developed with ❤️ by Rookiezz Solutions.</p>
         </div>
       </div>
     </footer>

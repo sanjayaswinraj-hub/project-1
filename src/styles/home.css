@@ -59,7 +59,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: transparent;
     z-index: 2;
 }
 
@@ -79,6 +78,7 @@
     color: white;
     line-height: 1.2;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
 }
 
 .content-wrap p {
@@ -87,8 +87,8 @@
     opacity: 1;
     color: white;
     font-weight: 500;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 }
 
 .cta {
