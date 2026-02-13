@@ -8,6 +8,75 @@ export const categories: CategoryData[] = [
     coverImage: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/matias-santana-2ykXqiKHNfk-unsplash.jpg',
     subcategories: [
       {
+        title: 'Reinforcement Steel',
+        products: [
+          { 
+            name: 'Deformed - TMT Bars 12mm', 
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed - TMT Bars 12mm.png',
+            tags: ['Structural', 'Concrete'],
+            specifications: [
+              { label: 'Diameter', value: '12mm' }, 
+              { label: 'Standard Length', value: '12 Meters' }, 
+              { label: 'Grade', value: 'Fe500 / BS4449' },
+              { label: 'Type', value: 'Thermo Mechanically Treated' }
+            ]
+          },
+          { 
+            name: 'Deformed - TMT Bars 10mm', 
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 10mm.png',
+            tags: ['Structural', 'Concrete'],
+            specifications: [
+              { label: 'Diameter', value: '10mm' }, 
+              { label: 'Standard Length', value: '12 Meters' }, 
+              { label: 'Grade', value: 'Fe500 / BS4449' },
+              { label: 'Type', value: 'Thermo Mechanically Treated' }
+            ]
+          },
+          { 
+            name: 'Deformed - TMT Bars 8mm', 
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 8mm.png',
+            tags: ['Structural', 'Concrete'],
+            specifications: [
+              { label: 'Diameter', value: '8mm' }, 
+              { label: 'Standard Length', value: '12 Meters' }, 
+              { label: 'Grade', value: 'Fe500 / BS4449' },
+              { label: 'Type', value: 'Thermo Mechanically Treated' }
+            ]
+          },
+          { 
+            name: 'Deformed and TMT Bars', 
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed and TMT Bars.jpg',
+            tags: ['Structural', 'Concrete'],
+            specifications: [
+              { label: 'Product Range', value: '8mm - 32mm' },
+              { label: 'Type', value: 'High Yield Strength Deformed Bars' }
+            ]
+          },
+          { 
+            name: 'Deformed - TMT Bars 16mm', 
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 16mm.png',
+            tags: ['Structural', 'Concrete'],
+            specifications: [
+              { label: 'Diameter', value: '16mm' }, 
+              { label: 'Standard Length', value: '12 Meters' }, 
+              { label: 'Grade', value: 'Fe500 / BS4449' },
+              { label: 'Type', value: 'Thermo Mechanically Treated' }
+            ]
+          },
+          { 
+            name: 'Deformed - TMT Bars 20mm', 
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 20mm.png',
+            tags: ['Structural', 'Concrete'],
+            specifications: [
+              { label: 'Diameter', value: '20mm' }, 
+              { label: 'Standard Length', value: '12 Meters' }, 
+              { label: 'Grade', value: 'Fe500 / BS4449' },
+              { label: 'Type', value: 'Thermo Mechanically Treated' }
+            ]
+          }
+        ]
+      },
+      {
         title: 'Stainless Steel (SS316/SS304) – Fasteners & Fixings',
         products: [
           { 
@@ -352,75 +421,7 @@ export const categories: CategoryData[] = [
           }
         ]
       },
-      {
-        title: 'Reinforcement Steel',
-        products: [
-          { 
-            name: 'Deformed - TMT Bars 12mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed - TMT Bars 12mm.png',
-            tags: ['Structural', 'Concrete'],
-            specifications: [
-              { label: 'Diameter', value: '12mm' }, 
-              { label: 'Standard Length', value: '12 Meters' }, 
-              { label: 'Grade', value: 'Fe500 / BS4449' },
-              { label: 'Type', value: 'Thermo Mechanically Treated' }
-            ]
-          },
-          { 
-            name: 'Deformed - TMT Bars 10mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 10mm.png',
-            tags: ['Structural', 'Concrete'],
-            specifications: [
-              { label: 'Diameter', value: '10mm' }, 
-              { label: 'Standard Length', value: '12 Meters' }, 
-              { label: 'Grade', value: 'Fe500 / BS4449' },
-              { label: 'Type', value: 'Thermo Mechanically Treated' }
-            ]
-          },
-          { 
-            name: 'Deformed - TMT Bars 8mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 8mm.png',
-            tags: ['Structural', 'Concrete'],
-            specifications: [
-              { label: 'Diameter', value: '8mm' }, 
-              { label: 'Standard Length', value: '12 Meters' }, 
-              { label: 'Grade', value: 'Fe500 / BS4449' },
-              { label: 'Type', value: 'Thermo Mechanically Treated' }
-            ]
-          },
-          { 
-            name: 'Deformed and TMT Bars', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed and TMT Bars.jpg',
-            tags: ['Structural', 'Concrete'],
-            specifications: [
-              { label: 'Product Range', value: '8mm - 32mm' },
-              { label: 'Type', value: 'High Yield Strength Deformed Bars' }
-            ]
-          },
-          { 
-            name: 'Deformed - TMT Bars 16mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 16mm.png',
-            tags: ['Structural', 'Concrete'],
-            specifications: [
-              { label: 'Diameter', value: '16mm' }, 
-              { label: 'Standard Length', value: '12 Meters' }, 
-              { label: 'Grade', value: 'Fe500 / BS4449' },
-              { label: 'Type', value: 'Thermo Mechanically Treated' }
-            ]
-          },
-          { 
-            name: 'Deformed - TMT Bars 20mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 20mm.png',
-            tags: ['Structural', 'Concrete'],
-            specifications: [
-              { label: 'Diameter', value: '20mm' }, 
-              { label: 'Standard Length', value: '12 Meters' }, 
-              { label: 'Grade', value: 'Fe500 / BS4449' },
-              { label: 'Type', value: 'Thermo Mechanically Treated' }
-            ]
-          }
-        ]
-      }
+      
     ]
   },
   {
