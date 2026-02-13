@@ -45,7 +45,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS316 Nuts (M10, M12)', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Nuts (M10, M12).jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Nuts (M10, M12).png',
             tags: ['Fasteners', 'Hardware'],
             specifications: [
               { label: 'Material', value: 'SS316' }, 
@@ -56,7 +56,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS316 U-Bolts (¼", ⅜" – all sizes)', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 U-Bolts.jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 U-Bolts.png',
             tags: ['Fasteners', 'Piping'],
             specifications: [
               { label: 'Material', value: 'SS316' }, 
@@ -962,7 +962,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'Waterproof Fiberglass Mesh', 
-            image: '/img/products/fr exims/Waterproofing Materials/Waterproof Fiberglass Mesh.jpg', 
+            image: '/img/products/fr exims/Waterproofing Materials/Waterproof Fiberglass Mesh.jpeg', 
             tags: ['Waterproofing', 'Reinforcement'],
             specifications: [
               { label: 'Material', value: 'Alkali Resistant Fiberglass' }, 
@@ -1246,7 +1246,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'Custom Printed Warning Tape (All Sizes)', 
-            image: '/img/products/fr exims/Warning & Identification/Custom Printed Warning Tape (All Sizes).jpg', 
+            image: '/img/products/fr exims/Warning & Identification/Custom Printed Warning Tape (All Sizes).png', 
             tags: ['Safety', 'Warning'],
             specifications: [
               { label: 'Material', value: 'LDPE' }, 
@@ -1257,7 +1257,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Underground Warning Tape', 
-            image: '/img/products/fr exims/Warning & Identification/Underground Warning Tape.jpg', 
+            image: '/img/products/fr exims/Warning & Identification/Underground Warning Tape.png', 
             tags: ['Safety', 'Utility'],
             specifications: [
               { label: 'Application', value: 'Buried Cable/Pipe Marking' }, 

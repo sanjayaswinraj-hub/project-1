@@ -50,7 +50,7 @@ const productCategories = [
     title: 'Warning Tapes',
     description: 'High-visibility warning and caution tapes for safety applications, hazard marking, construction sites, and industrial facility demarcation with durable adhesive backing.',
     tags: ['Barricade Caution Tapes', 'Floor Marking Tapes', 'Safety Hazard Tapes'],
-    image: '/img/products/fr exims/Warning & Identification/Custom Printed Warning Tape (All Sizes).jpg'
+    image: '/img/products/fr exims/Warning & Identification/Custom Printed Warning Tape (All Sizes).png'
   }
 ];
 
