@@ -12,7 +12,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'U Bolt Nut Washer', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/U Bolt Nut Washer.jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/U Bolt Nut Washer.png',
             tags: ['Industrial', 'Fasteners', 'Marine Grade'],
             specifications: [
               { label: 'Material Grade', value: 'SS316 / SS304' }, 
@@ -23,7 +23,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS316 Threaded Rods (M10, M12)', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Threaded Rods (M10, M12).jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Threaded Rods (M10, M12).png',
             tags: ['Industrial', 'Structural', 'Fasteners'],
             specifications: [
               { label: 'Material', value: 'Stainless Steel 316' }, 
@@ -34,7 +34,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS316 Flat Washers (M6, M10, M12)', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Flat Washers (M6, M10, M12).jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Flat Washers (M6, M10, M12).png',
             tags: ['Fasteners', 'Hardware'],
             specifications: [
               { label: 'Material', value: 'SS316 Marine Grade' }, 
@@ -67,7 +67,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS316 Anchor Bolts (M10, M12)', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Anchor Bolts (M10, M12).jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Anchor Bolts (M10, M12).png',
             tags: ['Anchors', 'Construction', 'Concrete'],
             specifications: [
               { label: 'Material', value: 'SS316' }, 
@@ -100,7 +100,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS316 Scotch Screws', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Scotch Screw.jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/SS316 Scotch Screw.png',
             tags: ['Screws', 'Construction'],
             specifications: [
               { label: 'Material', value: 'SS316' }, 
@@ -110,7 +110,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Hexagonal Screws', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/Hexagonal Screws.jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/Hexagonal Screws.png',
             tags: ['Screws', 'General Purpose'],
             specifications: [
               { label: 'Head Type', value: 'Hexagonal' }, 
@@ -131,7 +131,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Binding Wire (All Gauges)', 
-            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/Binding Wire (All Gauges).jpg',
+            image: '/img/products/fr exims/Stainless Steel (SS316  SS304) – Fasteners & Fixings/Binding Wire (All Gauges).png',
             tags: ['Construction', 'Rebar'],
             specifications: [
               { label: 'Material', value: 'Annealed Steel Wire' }, 
@@ -169,7 +169,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS304 Sheet Corner Angles', 
-            image: '/img/products/fr exims/Stainless Steel – Clamps & Sections/SS304 Sheet Corner Angles.jpg',
+            image: '/img/products/fr exims/Stainless Steel – Clamps & Sections/SS304 Sheet Corner Angles.png',
             tags: ['Fabrication', 'Finishing'],
             specifications: [
               { label: 'Material', value: 'SS304' }, 
@@ -180,7 +180,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'SS304 Flat Corner Radius Sections', 
-            image: '/img/products/fr exims/Stainless Steel – Clamps & Sections/SS304 Flat Corner Radius Sections.jpg',
+            image: '/img/products/fr exims/Stainless Steel – Clamps & Sections/SS304 Flat Corner Radius Sections.png',
             tags: ['Fabrication', 'Architectural'],
             specifications: [
               { label: 'Material', value: 'SS304' }, 
@@ -195,7 +195,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'GI Pipe 40mm × 1.6mm × 5.8m', 
-            image: '/img/products/fr exims/GI  HDG Structural Steel/GI Pipe 40mm × 1.6mm × 5.8m.jpg',
+            image: '/img/products/fr exims/GI  HDG Structural Steel/GI Pipe 40mm × 1.6mm × 5.8m.png',
             tags: ['Standard', 'Piping'],
             specifications: [
               { label: 'Outer Diameter', value: '40MM' },
@@ -206,7 +206,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'GI Corrugated Sheets', 
-            image: '/img/products/fr exims/GI  HDG Structural Steel/GI Corrugated Sheets.jpg',
+            image: '/img/products/fr exims/GI  HDG Structural Steel/GI Corrugated Sheets.png',
             tags: ['Roofing', 'Cladding'],
             specifications: [
               { label: 'Material', value: 'Galvanized Iron' }, 
@@ -217,7 +217,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Galvanized Chequered Plate – 6mm', 
-            image: '/img/products/fr exims/GI  HDG Structural Steel/Galvanized Chequered Plate – 6mm.jpg',
+            image: '/img/products/fr exims/GI  HDG Structural Steel/Galvanized Chequered Plate – 6mm.png',
             tags: ['Flooring', 'Industrial', 'Safety'],
             specifications: [
               { label: 'Base Material', value: 'Mild Steel' }, 
@@ -258,7 +258,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'HDG H-Beam 8" × 6.5"', 
-            image: '/img/products/fr exims/GI  HDG Structural Steel/HDG H-Beam 8 × 6.5.jpg',
+            image: '/img/products/fr exims/GI  HDG Structural Steel/HDG H-Beam 8 × 6.5.png',
             tags: ['Structural', 'Heavy Duty'],
             specifications: [
               { label: 'Profile', value: 'H-Beam / Universal Column' }, 
@@ -284,7 +284,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'GI Coupler', 
-            image: '/img/products/fr exims/GI Accessories/GI Coupler.jpg', 
+            image: '/img/products/fr exims/GI Accessories/GI Coupler.png', 
             tags: ['Piping', 'Fittings'],
             specifications: [
               { label: 'Material', value: 'Malleable Iron' }, 
@@ -294,7 +294,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Clamps for 1 1/2 GI Pipe', 
-            image: '/img/products/fr exims/GI Accessories/Clamps for 1 GI Pipe.jpg',
+            image: '/img/products/fr exims/GI Accessories/Clamps for 1 GI Pipe.png',
             tags: ['Industrial', 'Piping'],
             specifications: [
               { label: 'Pipe Size Compatibility', value: '1 1/2 inch' },
@@ -342,7 +342,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'T-Truss Frame (Fabricated & HDG)', 
-            image: '/img/products/fr exims/Mild Steel (MS) – Structural & Formwork/T-Truss Frame (Fabricated & HDG).jpg',
+            image: '/img/products/fr exims/Mild Steel (MS) – Structural & Formwork/T-Truss Frame (Fabricated & HDG).png',
             tags: ['Structural', 'Prefab'],
             specifications: [
               { label: 'Type', value: 'T-Truss Frame' }, 
@@ -357,7 +357,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'Deformed - TMT Bars 12mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed - TMT Bars 12mm.jpg',
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed - TMT Bars 12mm.png',
             tags: ['Structural', 'Concrete'],
             specifications: [
               { label: 'Diameter', value: '12mm' }, 
@@ -368,7 +368,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Deformed - TMT Bars 10mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 10mm.jpg',
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 10mm.png',
             tags: ['Structural', 'Concrete'],
             specifications: [
               { label: 'Diameter', value: '10mm' }, 
@@ -379,7 +379,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Deformed - TMT Bars 8mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 8mm.jpg',
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed -TMT Bars 8mm.png',
             tags: ['Structural', 'Concrete'],
             specifications: [
               { label: 'Diameter', value: '8mm' }, 
@@ -399,7 +399,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Deformed - TMT Bars 16mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 16mm.jpg',
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 16mm.png',
             tags: ['Structural', 'Concrete'],
             specifications: [
               { label: 'Diameter', value: '16mm' }, 
@@ -410,7 +410,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Deformed - TMT Bars 20mm', 
-            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 20mm.jpg',
+            image: '/img/products/fr exims/Reinforcement Steel/Deformed-TMT Bars 20mm.png',
             tags: ['Structural', 'Concrete'],
             specifications: [
               { label: 'Diameter', value: '20mm' }, 
@@ -630,7 +630,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'Earth Matt 295×600 (R10)', 
-            image: '/img/products/fr exims/Tiles & Flooring/Earth Matt 295×600 (R10).jpg',
+            image: '/img/products/fr exims/Tiles & Flooring/Earth Matt 295×600 (R10).png',
             tags: ['Tiles', 'Ceramic'],
             specifications: [
               { label: 'Finish', value: 'Earth Matt' }, 
@@ -673,7 +673,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Snow White 295×600 (Polished)', 
-            image: '/img/products/fr exims/Tiles & Flooring/Snow White 295×600 (Polished).jpg',
+            image: '/img/products/fr exims/Tiles & Flooring/Snow White 295×600 (Polished).png',
             tags: ['Tiles', 'Wall'],
             specifications: [
               { label: 'Color', value: 'Snow White' }, 
@@ -985,7 +985,7 @@ export const categories: CategoryData[] = [
         products: [
           { 
             name: 'Fleet Guard Genset', 
-            image: '/img/products/fr exims/Heavy Equipment/Fleet Guard Genset.jpg', 
+            image: '/img/products/fr exims/Heavy Equipment/Fleet Guard Genset.png', 
             tags: ['Power Generation', 'Industrial'],
             specifications: [
               { label: 'Type', value: 'Diesel Generator Set' }, 
@@ -1005,7 +1005,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'Tractors & Implements', 
-            image: '/img/products/fr exims/Heavy Equipment/Tractors & Implements.jpg', 
+            image: '/img/products/fr exims/Heavy Equipment/Tractors & Implements.png', 
             tags: ['Agriculture', 'Construction'],
             specifications: [
               { label: 'Engine Power', value: '50 HP - 90 HP' }, 
@@ -1015,7 +1015,7 @@ export const categories: CategoryData[] = [
           },
           { 
             name: 'JCB', 
-            image: '/img/products/fr exims/Heavy Equipment/heavy-machinery-used-construction-industry-engineering (1).jpg', 
+            image: '/img/products/fr exims/Heavy Equipment/jcb.png', 
             tags: ['Construction', 'Earthmoving'],
             specifications: [
               { label: 'Type', value: 'Backhoe Loader' }, 

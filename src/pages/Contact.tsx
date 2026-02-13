@@ -85,19 +85,53 @@ const Contact: React.FC = () => {
     return true;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formRef.current) return;
 
     setIsSending(true);
     setSubmitStatus('idle');
 
-    // Simulation of form submission
-    setTimeout(() => {
+    try {
+      // Using FormSubmit.co which requires only the destination email and no API keys
+      // The first time you submit this form, you will receive an activation email at sanjayaswinraj@gmail.com
+      const response = await fetch("https://formsubmit.co/ajax/selvaprasad23@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `New Quote Request - ${formData.category || 'General'}`,
+          name: formData.name,
+          email: formData.email, // User's email for Reply-To
+          phone: `${formData.countryCode} ${formData.phone}`,
+          company: formData.company || 'N/A',
+          inquiry_type: formData.category,
+          message: formData.message,
+          _template: 'table', // Formats the email data in a nice table
+          _captcha: 'false'   // Disable captcha for smoother UX
+        })
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', phone: '', countryCode: '+91', company: '', category: '', message: '' });
+
+        // Auto-hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus('idle');
+        }, 5000);
+      } else {
+        console.error('FormSubmit Error:', await response.text());
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Submission Error:', error);
+      setSubmitStatus('error');
+    } finally {
       setIsSending(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', phone: '', countryCode: '+91', company: '', category: '', message: '' });
-    }, 1500);
+    }
   };
 
   const countryOptions = countryCodes.map(c => ({

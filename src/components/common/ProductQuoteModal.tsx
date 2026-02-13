@@ -67,9 +67,9 @@ CONTACT INFORMATION
 -------------------
 Company: FR EXIMS
 Website: ${window.location.origin}
-Email: info@frexims.com
-Phone: +91 (555) 123-4567
-
+Email: frexims@gmail.com
+Phone: +91 73588 99766 , +91 98430 44445
+ 
 For quotes and detailed specifications, please contact us.
 
 =====================================
