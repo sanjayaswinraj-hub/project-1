@@ -95,7 +95,7 @@ const Contact: React.FC = () => {
     try {
       // Using FormSubmit.co which requires only the destination email and no API keys
       // The first time you submit this form, you will receive an activation email at sanjayaswinraj@gmail.com
-      const response = await fetch("https://formsubmit.co/ajax/selvaprasad23@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/frexims@gmail.com", {
         method: "POST",
         headers: { 
           'Content-Type': 'application/json',
